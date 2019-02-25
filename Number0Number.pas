@@ -1,9 +1,9 @@
-program homework;
-uses crt;
+﻿program homework;
+
 var a:array[1..100] of integer;
 i,n,g:integer;
 begin
-  clrscr;
+
   read(n);
   //Ввод чисел в массивы
   for i:=1 to n do
