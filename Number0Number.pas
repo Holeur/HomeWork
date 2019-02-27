@@ -3,9 +3,10 @@
 var a:array[1..100] of integer;
 i,n,g:integer;
 begin
-
+  writeln('Кол-во чисел в массиве - ');
   read(n);
   //Ввод чисел в массивы
+  writeln('Ввод чисел(через пробел)');
   for i:=1 to n do
     begin
     read(a[i]);
