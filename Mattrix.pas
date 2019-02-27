@@ -6,6 +6,7 @@ begin
 writeln('Размер матрицы:');
 read(n);
 //Вводим каждый элемент матрицы
+writeln('Ввод чисел(все числа через пробел, либо число - enter - число - enter)');
 for i:=1 to n do
   begin
   for i2:=1 to n do
