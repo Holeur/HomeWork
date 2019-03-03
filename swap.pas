@@ -9,6 +9,8 @@ for i:=1 to b do
   end;
 min:= a[1];
 mini:= 1;
+max:= a[1];
+maxi:= 1;
 for i:=1 to b do
   if a[i] > max then
     begin
