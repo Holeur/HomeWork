@@ -14,8 +14,11 @@ for i:=1 to b do
  for u:=1 to b do
   if u>i then
     begin
-    s:= s + a[i,u];
-    h:= h + 1;
+    if a[i,u] > 0 then
+      begin
+      s:= s + a[i,u];
+      h:= h + 1;
+      end;
     end;
 writeln('-------');
 writeln(s,' ',h);//s - сумма чисел, h - количество чисел
