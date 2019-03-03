@@ -1,5 +1,5 @@
 ﻿program checkline;
-var a:array[1..10] of array [1..10] of integer; i,u,k,n:integer;
+var a:array[1..10] of array [1..10] of real; d:real; i,u,n,k:integer;
 begin
 Writeln('Размер матрицы и номер строки сверху');
 read(n,k);
@@ -22,11 +22,10 @@ for i:=1 to n do //Весь этот фор рисует матрицу, мно�
   end;
 writeln(' ');
 writeln('--------------------------');
+writeln('Делим все числа ',k,'-ой строки на диагональ ',a[k,k]);
 for i:=1 to n do
-  if i = k then
-    for u:=1 to n do
-      if u = k then
-        write('\\\',a[i,u],'\\\ ')
-      else
-        write(a[i,u],' ');
+  begin
+  d:=a[k,i]/a[k,k];
+  write(d:2:2,' ');
+  end;
 end.
